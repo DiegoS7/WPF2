@@ -12,8 +12,8 @@
             <ComboBoxItem Content="Yellow" IsSelected="True"/>
             <ComboBoxItem Content="Orange"/>
         </ComboBox>
-        <TextBox x:Name="textbox" Margin="50" Width="100" Height="23" VerticalAlignment="Top" 
-                 Text="{Binding ElementName=comboBox,Path=SelectedItem.content, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+        <TextBox Name="textbox" Margin="50" Width="100" Height="23" VerticalAlignment="Top" 
+                 Text="{Binding ElementName=comboBox,Path=SelectedItem.Content, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
                  Background="{Binding ElementName=comboBox, Path=SelectedItem.Content}">
             
         </TextBox>
